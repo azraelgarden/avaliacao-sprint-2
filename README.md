@@ -1,4 +1,4 @@
-# Avaliação Sprint 1
+# Avaliação Sprint 2
 
 ## Execução
 - 
@@ -10,3 +10,8 @@
 - Subir o desafio até às 13h do dia 24/05 no repositório do github (https://github.com/AzraelGarden/avaliacao-sprint-2/).
 
 ## Grupos
+- Grupo 1:
+- Grupo 2:
+- Grupo 3:
+- Grupo 4:
+- Grupo 5:
