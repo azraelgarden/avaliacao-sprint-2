@@ -9,4 +9,4 @@ plota um grafico com os dados já tratados, depois treina esses dados e armazena
 - Selecionamos os treasures, e ajustamos os dados de acordo com o que foi nescessário;
 - Geramos o gráfico com os dados dispostos;
 - Definimos a rotina de testes e treinamentos;
-- Subimos os valores ao MongoDB
+- Subimos os valores ao MongoDB.
