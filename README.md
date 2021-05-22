@@ -1,4 +1,4 @@
-# Avaliação Sprint 2
+# Avaliação Sprint 2 - Grupo 5 - Gustavo e Thiago
 
 ## Cabeçalio
  Este programa acessa o DataSet, faz a tratativa dos dados, selecionando 2 de seus treasures,
@@ -10,5 +10,3 @@ plota um grafico com os dados já tratados, depois treina esses dados e armazena
 - Geramos o gráfico com os dados dispostos;
 - Definimos a rotina de testes e treinamentos;
 - Subimos os valores ao MongoDB
-
-## Grupo 5 - Gustavo e Thiago
