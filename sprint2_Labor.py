@@ -30,7 +30,7 @@ y_DF = pd.DataFrame(y)
 # criando dados somente com as colunas desejadas
 dados = x[["duration", "standby-pay"]]
 # unindo y_DF com dados
-dados.loc['class'] = y_DF
+dados['class'] = y_DF
 # excluindo "standby-pay" = NaN
 dados = dados.dropna()
 print(dados)
