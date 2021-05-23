@@ -7,7 +7,7 @@ class Database:
         self._db = db_name
         self._collection = collection_name
 
-        connection = f'mongodb+srv://admin:admin@cluster0.zxisf.mongodb.net/{self._db}?retryWrites=true&w=majority'
+        connection = f'mongodb+srv://admin:admin@cluster0.brrmv.mongodb.net/{self._db}?retryWrites=true&w=majority'
         self.client = MongoClient(connection)
         
         database = self.client[self._db]
