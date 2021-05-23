@@ -1,6 +1,6 @@
 # Avaliação Sprint 2 - Grupo 5 - Gustavo e Thiago
 
-## Cabeçalio
+## Cabeçalho
  Este programa acessa o DataSet, faz a tratativa dos dados, selecionando 2 de seus treasures,
 plota um grafico com os dados já tratados, depois treina esses dados e armazena os resultados no MongoDB
 
