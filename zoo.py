@@ -25,15 +25,11 @@ import torch
 import pymongo
 
 
-# CODIGO COM ERRO
-#datasets_df = openml.datasets.list_datasets(output_format="dataframe")
-# print(datasets_df.head(n=10))
-
 dataset = openml.datasets.get_dataset(62)
 linhas, tipo, categorical_indicator, nome_das_colunas = dataset.get_data(
     dataset_format="dataframe", target=dataset.default_target_attribute)
 
-# ACRECENTANDO EM UMA VARIAVEL
+# ACRESCENTANDO EM UMA VARIAVEL
 info = dataset.get_data(dataset_format="dataframe",
                         target=dataset.default_target_attribute)
 
@@ -59,10 +55,10 @@ a_renomear = {
     'domestic': 'domestico',
     'catsize': 'tamanho_de_gato'
 }
-# ATRIBUINDO OS VALORES TROCADOS
+
 df = df.rename(columns=a_renomear)
 
-# TROCANDO OS NOME DO DOS ANIMAIS PARA O VALOR ESPECIFICO DELE, E NA FRENTE A REF
+# TROCANDO OS NOME DO DOS ANIMAIS PARA O VALOR ESPECIFICO DELE
 for i in range(len(df)):
     if info[1][i] == 'mammal':
         df.loc[i, "tipo"] = 0  # mamifero
@@ -328,8 +324,6 @@ try:
             f'Selecione a caracterificas do seu animal!\nTem {indice.upper()}\n1 - SIM\n0 - NAO ? ')))
 
     previsao = [animal]
-    print('\n')
-    print(f'Previsao : {previsao}')
     animalacuracia = modelo.predict(previsao)[0]
     print(
         f'Animal : {animalacuracia.upper()}')
@@ -393,4 +387,4 @@ try:
         print(f'Obrigado por usar nosso sitemas!.... \n')
 
 except:
-    print(error)
+    print('')
