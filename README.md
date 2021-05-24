@@ -17,6 +17,6 @@ A proposta do projeto é capturar os dados através de um dataset. O dataset esc
 
 
 ## Autores
-- <b>[Rafael Inácio] (https://github.com/rafaelinacioo)</b>
-- <b>[Lucas Henrique] (https://github.com/Lucashtdesa)</b>
-- <b>[Joice Gonçalves Furigo] (https://github.com/JoiceF89)</b>
+- <b>[Rafael Inácio](https://github.com/rafaelinacioo)</b>
+- <b>[Lucas Henrique](https://github.com/Lucashtdesa)</b>
+- <b>[Joice Gonçalves Furigo](https://github.com/JoiceF89)</b>
