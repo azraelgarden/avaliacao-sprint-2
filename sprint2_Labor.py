@@ -16,7 +16,6 @@ import matplotlib.pyplot as plt
 # buscando dataset: Labor https://www.openml.org/d/4
 dataset = openml.datasets.get_dataset(4)
 # printando informações do dataset
-print(dataset)
 
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # adicionando as informações do dataset a variável info
@@ -30,9 +29,10 @@ y_DF = pd.DataFrame(y)
 # criando dados somente com as colunas desejadas
 dados = x[["duration", "standby-pay"]]
 # unindo y_DF com dados
-dados['class'] = y_DF
+dados = dados.join(y_DF)
 # excluindo "standby-pay" = NaN
 dados = dados.dropna()
+print(dataset)
 print(dados)
 
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -84,7 +84,8 @@ mycol = mydb["contratos"]
 #inserindo dados no mongodb
 dados.reset_index(inplace=True)
 dados = dados.to_dict('records')
-mycol.insert_many(dados)
+list_dados = (dados)
+mycol.insert_many(list_dados)
 
 #inserindo qtde de treinados/qtde de testados/acuracia no mongodb
 dic = {"treinados": len(treino_x), "testados": len(
