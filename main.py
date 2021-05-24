@@ -1,4 +1,5 @@
 from dataset import Datasets
+from database import Database
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -42,3 +43,18 @@ model.fit(train_x, train_y.values.ravel())
 predict = model.predict(train_x)
 accuracy = accuracy_score(train_y, predict) * 100
 print(f'accuracy: {accuracy:.2f}%')
+
+g_database = Database('Avaliação_2','galaxy')
+
+data.reset_index(inplace=True)
+dados = data.to_dict('list')
+# print(dados)
+g_dados = ((dados))
+g_database.insert_one(g_dados)
+
+dic = {"treinados": len(train_x), "testados": len(
+    test_x), "acuracia": accuracy}
+
+g_database.insert_one(dic)
+
+g_database.show()
