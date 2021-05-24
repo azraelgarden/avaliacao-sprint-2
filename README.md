@@ -1,21 +1,22 @@
-# Avaliação Sprint 2
+# Avaliação Sprint 2 - Grupo 2 - Rafael - Lucas - Joice
 
-## Execução
-- Escolher um dataset dentre os seguintes: https://www.openml.org/s/88/data
--	Carregar o dataset com base no código https://github.com/openml/openml-python/blob/develop/examples/20_basic/simple_datasets_tutorial.py
--	Obter os dados do treinamento
--	Armazenar no mongodb com base no código: https://github.com/khotveer/Saving_models_in_MongoDB
--	Seguir os passos de entrega
+## Descrição do projeto
+A proposta do projeto é capturar os dados através de um dataset. O dataset escolhido foi https://www.openml.org/d/62. Com a utilização do Python fazer o treinamento para identificar os dados e inserir no banco MongoDB, e apresentar essa consulta para o usuário.
 
-## Entrega
-- Aceitar o invite do repositório da avaliacao-sprint-2;
-- Criar uma branch no repositório com o nome avalicao-grupo-numero (Exemplo: avaliacao-grupo-1);
-- Subir o desafio na branch com um readme.md, explicando sobre o que foi utilizado no desafio e o nome dos integrantes do grupo.
-- Subir o desafio até às 13h do dia 24/05 no repositório do github (https://github.com/AzraelGarden/avaliacao-sprint-2/).
+## Tecnologias 
+- Python3
+- MongoDB
+- https://www.openml.org/d/62
 
-## Grupos
-- Grupo 1: João Victor, Ana e Michael
-- Grupo 2: Rafael, Joice e Lucas Henrique
-- Grupo 3: Vanessa, Felipe e Leonardo Freire
-- Grupo 4: João Bassi, Caio e Victor
-- Grupo 5: Gustavo e Thiago
+
+## Fluxo de trabalho
+- Extrair os dados da dataset zoo
+- Fazer o tratamento dos dados, acurácia e precisão de testes
+- Inserir no banco MongoDB (Online)
+- Visualizar esses dados através do MongoDB
+
+
+## Autores
+- <b>[Rafael Inácio] (https://github.com/rafaelinacioo)</b>
+- <b>[Lucas Henrique] (https://github.com/Lucashtdesa)</b>
+- <b>[Joice Gonçalves Furigo] (https://github.com/JoiceF89)</b>
